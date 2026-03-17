@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import axios from "axios";
+import registerBookMailerRoutes from "./book";
 
 dotenv.config();
 
@@ -9,7 +10,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+registerBookMailerRoutes(app);
+
 const BREVO_API_URL = "https://api.brevo.com/v3/smtp/email";
+
+
 
 // Route to handle form submission
 app.post("/send-mail", async (req, res) => {

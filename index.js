@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import axios from "axios";
-import registerBookMailerRoutes from "./book";
+import registerBookMailerRoutes from "./book.js";
 
 dotenv.config();
 

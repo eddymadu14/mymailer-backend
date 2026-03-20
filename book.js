@@ -69,7 +69,7 @@ export default function registerBookMailerRoutes(app) {
             htmlContent: `
               <h2>Hi ${name},</h2>
               <p>Your request for the <b>China To Cash Playbook</b> has been received.</p>
-              <p><b>To complete your order, send ${price} to:</b></p>
+              <p><b>To complete your order, send ₦${price} to:</b></p>
               <div style="background:#f4f4f4;padding:15px;border-radius:8px;">
                 <p><b>Account Name:</b> Edward Maduneme</p>
                 <p><b>Bank:</b> Opay</p>
